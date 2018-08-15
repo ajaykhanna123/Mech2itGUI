@@ -88,7 +88,7 @@
                 android:layout_marginEnd="15dp"
                 android:id="@+id/uniqueWord"
                 android:layout_marginBottom="10dp"
-                android:maxLength="100"
+                android:maxLength="10"
 
                 />
             <AutoCompleteTextView
