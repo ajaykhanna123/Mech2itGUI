@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/app_back1"
+        android:scaleType="centerCrop"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_white_rec"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Just a Few details to Get Started"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"> </TextView>
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Unique Code"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginStart="15dp"
+                    android:drawableLeft="@drawable/unique_code"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/uniqueCode"
+                    android:inputType="number"
+                    android:layout_marginBottom="10dp"
+                    android:maxLength="6"
+
+                    />
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="College Name"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/college_icon"
+                android:layout_marginStart="15dp"
+                android:maxLength="100"
+
+
+                android:paddingStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/collegeName"
+                android:layout_marginBottom="10dp"
+                />
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Unique Word"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_note_black_24dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/uniqueWord"
+                android:layout_marginBottom="10dp"
+                android:maxLength="100"
+
+                />
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Other Links"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:drawableLeft="@drawable/ic_insert_link_black_24dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/otherLinks"
+                android:layout_marginBottom="40dp"
+                android:maxLength="100"
+
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
