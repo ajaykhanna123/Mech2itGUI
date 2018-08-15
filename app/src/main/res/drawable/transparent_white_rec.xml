@@ -3,13 +3,9 @@
 <item>
     <shape>
         <solid android:color="#80ffffff">
-            <solid android:color="#FFFFFF"/>
             <stroke android:width="3dp" android:color="#B1BCBE" />
             <corners android:radius="10dp"/>
-            <padding android:left="0dp"
-                android:top="0dp"
-                android:right="0dp"
-                android:bottom="0dp" />
+            
         </solid>
     </shape>
 </item>
